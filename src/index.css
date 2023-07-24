@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.d-flex-col {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.col-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
+  grid-gap: 20px;
+}
+
+.col {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.col p {
+  color: #6e7191;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.left-content,
+.right-content {
+  width: 50%;
+}
+
+.border {
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #211f54;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.btn {
+  border-radius: 14px;
+  font-size: 16px !important;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  padding: 15px 20px;
+  font-weight: 400;
+}
+
+.btn-primary {
+  background: #0075ff;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.sec-title {
+  color: #211f54;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73.984px; /* 108.8% */
+}
+
+.sec-descr {
+  color: #6e7191;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.title {
+  color: #211f54;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.descr {
+  color: #6e7191;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+}
+
+.ads * {
+  text-align: start !important;
+  align-items: center;
+  color: #fff !important;
+}
+.ads .btn-white {
+  color: #000 !important;
+}
+
+.ads .container {
+  border-radius: 24px;
+  background: #211f54;
+  padding-right: 130px !important;
+}
+
+.ads .d-flex-col {
+  gap: 40px;
+}
+
+.ads p:first-child {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.ads h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120.8%;
+}
+
+.ads p:nth-child(3) {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 142.886%;
+}
+
+.card-body {
+  position: relative;
+  background: white;
+  max-width: 80%;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 24px;
+  margin-top: -60px !important;
+  margin: 0 auto;
+}
+.card-body h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-body * {
+  text-align: start !important;
+}
+.card-body p {
+  color: #6e7191;
+  font-size: 21px;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.pri-box {
+  background: #0075ff;
+  padding: 20px;
+  max-width: 20px;
+  max-height: 20px;
+}
+footer {
+  padding: 20px 0;
+}
+footer .container {
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+footer p {
+  color: #6e7191;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .row {
+    display: block;
+  }
+  .right-content,
+  .left-content {
+    width: 100%;
+  }
+  .sec-title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  .sec-descr {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .descr {
+    padding: 0;
+  }
+  .d-flex-col {
+    display: block;
+  }
+  .ads .container {
+    padding-right: 10px !important;
+    margin: 0 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ads h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  .ads p:first-child {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .ads p:last-child {
+    padding: 10px 0;
+  }
+}
